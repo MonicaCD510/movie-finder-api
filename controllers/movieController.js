@@ -13,7 +13,7 @@ const searchMovies = async (req, res) => {
 
   try {
     // Request movies from OMDb API
-    const response = await axios.get("http://www.omdbapi.com/", {
+    const response = await axios.get("https://www.omdbapi.com/", {
       params: {
         s: title,
         apikey: process.env.OMDB_API_KEY,
